@@ -1,10 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 package="com.example.vege"
 >
+<uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="vege"
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -39,7 +41,8 @@ package="com.example.vege"
      <category android:name="android.intent.category.DEFAULT" />
      <category android:name="android.intent.category.BROWSABLE" />
                       <data android:scheme="http" android:host="https://weaamokok.github.io" />
- </intent-filter> <intent-filter android:autoVerify="true">
+ </intent-filter> 
+ <intent-filter android:autoVerify="true">
      <action android:name="android.intent.action.VIEW" />
      <category android:name="android.intent.category.DEFAULT" />
      <category android:name="android.intent.category.BROWSABLE" />

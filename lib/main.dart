@@ -1,28 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:vege/src/utils/route.dart';
 
 void main() {
+ 
   runApp(const MyApp());
 }
  /// This handles '/' and '/details'.
- final router = GoRouter(
-   routes: <RouteBase>[
-     GoRoute(
-       path: "/",
-       builder: ( context,  state){
-        return const MyHomePage(title: 'djnd');
-       },
-       routes: [
-         GoRoute(
-           path: "details",
-           builder: (_, __) => Scaffold(
-             appBar: AppBar(title: const Text('Details Screen')),
-           ),
-         ),
-       ],
-     ),
-   ],
- );
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -30,7 +14,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp.router(routerConfig: router,
+    return MaterialApp.router(routerConfig: AppRoute.router,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.

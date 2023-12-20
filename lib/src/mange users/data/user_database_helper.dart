@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:vege/src/mange%20inventory/domin/models/vegetable.dart';
 import 'package:vege/src/mange%20users/domin/models/user.dart';
 
 class DatabaseProvider {

@@ -1,3 +1,5 @@
+import '../manage purchases/presentation/view/home_screen.dart';
+
 class AppConst {
   ///table names
   static const String vegetable = 'vegetable';
@@ -38,4 +40,13 @@ class AppConst {
   //position
     static const String title = 'title';
 
+    ///appConstans
+    //>> storage
+    static const String isFirstLunch='isFirstLunch';
+//bottom navigation pages 
+static const navPages=[
+              HomePage(),
+              
+            
+            ];
 }
